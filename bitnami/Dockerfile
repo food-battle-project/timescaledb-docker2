@@ -7,6 +7,7 @@ ARG TS_VERSION
 ARG GO_VERSION=1.19.1
 FROM golang:${GO_VERSION}-alpine AS tools
 
+
 ENV TOOLS_VERSION 0.8.1
 
 RUN apk update && apk add --no-cache git gcc \
